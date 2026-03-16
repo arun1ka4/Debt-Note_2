@@ -50,12 +50,35 @@ Debtnote adalah aplikasi sederhana yang ditujukan bagi pelaku UMKM dengan tujuan
 | `Column` & `Row` | Susunan widget secara vertikal dan horizontal |
 | `SingleChildScrollView` | Scroll pada halaman form |
 | `CircularProgressIndicator` | Indikator loading |
-| `SnackBar` | Notifikasi pesan sukses/gagal |
+| `SnackBar` | Notifikasi pesan berhasil/gagal |
 | `IconButton` | Tombol logout |
 | `TextButton.icon` | Tombol edit dan hapus |
 | `GestureDetector` | Navigasi ke halaman register/login |
 
 ---
+
+## Struktur Database
+
+### Tabel `users`
+| Kolom | Tipe | Keterangan |
+|---|---|---|
+| id | int8 | Primary key |
+| auth_id | uuid | Relasi ke Supabase Auth |
+| nama_usaha | text | Nama usaha pengguna |
+
+### Tabel `debt`
+| Kolom | Tipe | Keterangan |
+|---|---|---|
+| id | int8 | Primary key |
+| user_id | int8 | Foreign key ke tabel users |
+| nama | text | Nama penghutang |
+| jumlah | int8 | Jumlah hutang |
+| tanggal_hutang | date | Tanggal hutang dibuat |
+| tanggal_jatuh_tempo | date | Tanggal jatuh tempo hutang |
+
+---
+
+
 ## Teknologi yang Digunakan
 
 - **Flutter** — Framework UI
