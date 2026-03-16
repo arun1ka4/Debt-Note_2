@@ -74,7 +74,7 @@ lib/
 | Fitur | Deskripsi |
 |:---------:|---------|
 | Register | User dapat membuat akun di mana email tidak boleh sama |
-| Login | User dapat masuk mengakses aplikasi dengan login |
+| Login | User dapat masuk mengakses aplikasi dengan akun yang sudah diautentikasi melalui Supabase Auth|
 | Total Hutang | Menampilkan total nominal hutang seluruh pelanggan |
 | Create | Menambah data hutang baru terdiri dari nama penghutang, jumlah hutang, tanggal hutang dan jatuh tempo |
 | Read | Menampilkan data hutang dalam bentuk daftar |
