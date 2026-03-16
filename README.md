@@ -110,4 +110,18 @@ lib/
 
 ### Login Page
 
+<img width="400" height="auto" alt="Image" src="https://github.com/user-attachments/assets/e7d149b9-2b23-4c6b-83c5-da5ea7821374" />
 
+### Register Page
+
+<img width="400" height="auto" alt="Image" src="https://github.com/user-attachments/assets/2c3d628c-fa6b-4a53-bab0-80edc798fbf7" />
+
+### Home Page
+
+<img width="400" height="auto" alt="Image" src="https://github.com/user-attachments/assets/4358ad97-bf45-4c65-baed-65139e2a98be" />
+
+### Form Page
+
+<img width="400" height="auto" alt="Image" src="https://github.com/user-attachments/assets/27eb7305-8e05-4531-8cc6-67f220d6ec8a" />
+
+<img width="400" height="auto" alt="Image" src="https://github.com/user-attachments/assets/f652be75-23ae-44ff-9d93-132fac5c1d0f" />
