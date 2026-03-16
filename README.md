@@ -31,6 +31,8 @@ Debtnote adalah aplikasi sederhana yang ditujukan bagi pelaku UMKM dengan tujuan
 | Update | Mengubah data hutang dengan menekan salah satu data lalu klik tombol edit |
 | Delete | Menghapus data hutang dengan menekan salah satu data lalu klik tombol delete |
 
+---
+
 ## 📱Widget yang Digunakan
 
 | Widget | Kegunaan |
