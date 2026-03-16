@@ -48,6 +48,13 @@ Debtnote adalah aplikasi sederhana yang ditujukan bagi pelaku UMKM dengan tujuan
 | `GestureDetector` | Navigasi ke halaman register/login |
 
 ---
+## Teknologi yang Digunakan
 
+- **Flutter** — Framework UI
+- **Supabase** — Backend as a Service (database & autentikasi)
+- **flutter_dotenv** — Menyimpan konfigurasi sensitif di file `.env`
+- **intl** — Format tanggal dan mata uang
+
+---
 
 ## 🎨UI Aplikasi
