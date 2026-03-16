@@ -19,7 +19,7 @@ Debtnote adalah aplikasi sederhana yang ditujukan bagi pelaku UMKM dengan tujuan
 
 ---
 
-## Teknologi yang Digunakan
+## 🛠️Teknologi yang Digunakan
 
 - **Flutter** — Framework UI
 - **Supabase** — Backend as a Service (database & autentikasi)
