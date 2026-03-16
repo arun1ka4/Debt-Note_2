@@ -78,6 +78,9 @@ Debtnote adalah aplikasi sederhana yang ditujukan bagi pelaku UMKM dengan tujuan
 
 ---
 
+## 🎨UI Aplikasi
+
+---
 
 ## Teknologi yang Digunakan
 
@@ -87,5 +90,3 @@ Debtnote adalah aplikasi sederhana yang ditujukan bagi pelaku UMKM dengan tujuan
 - **intl** — Format tanggal dan mata uang
 
 ---
-
-## 🎨UI Aplikasi
