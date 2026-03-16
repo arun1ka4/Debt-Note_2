@@ -19,6 +19,7 @@ Debtnote adalah aplikasi sederhana yang ditujukan bagi pelaku UMKM dengan tujuan
 |:---------:|---------|
 | Register | User dapat membuat akun di mana email tidak boleh sama |
 | Login | User dapat masuk mengakses aplikasi dengan login |
+| Total Hutang | Menampilkan total nominal hutang seluruh pelanggan |
 | Create | Menambah data hutang baru terdiri dari nama penghutang, jumlah hutang, tanggal hutang dan jatuh tempo |
 | Read | Menampilkan data hutang dalam bentuk daftar |
 | Update | Mengubah data hutang dengan menekan salah satu data lalu klik tombol edit |
