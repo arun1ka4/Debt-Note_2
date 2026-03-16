@@ -7,9 +7,12 @@ Mata Kuliah: Pemrograman Berbasis Web
 ---
 
 ## ✨Table of Content
-- [Deskripsi](#Deskripsi)
+- [Deskripsi](#Deskripsi) 
+- [Teknologi](#Teknologi)
+- [Struktur Project](#Struktur-Project)
+- [Struktur Database](#Struktur-Database)
 - [Fitur](#fitur)
-- [Widget yang digunakan](#Widget-yang-Digunakan)
+- [Widget](#Widget)
 - [UI aplikasi](#UI-Aplikasi)
 
 ---
@@ -19,7 +22,7 @@ Debtnote adalah aplikasi sederhana yang ditujukan bagi pelaku UMKM dengan tujuan
 
 ---
 
-## 🛠️Teknologi yang Digunakan
+## 🛠️Teknologi
 
 - **Flutter** — Framework UI
 - **Supabase** — Backend as a Service (database & autentikasi)
@@ -79,7 +82,7 @@ lib/
 
 ---
 
-## 📱Widget yang Digunakan
+## 📱Widget
 
 | Widget | Kegunaan |
 |---|---|
