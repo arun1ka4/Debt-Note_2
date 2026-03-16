@@ -31,7 +31,6 @@ class _LoginPageState extends State<LoginPage> {
   Future<void> login() async {
     setState(() => isLoading = true);
     try {
-      // Login dengan Supabase Auth
       final response = await supabase.auth.signInWithPassword(
         email: emailController.text.trim(),
         password: passwordController.text.trim(),
@@ -47,7 +46,6 @@ class _LoginPageState extends State<LoginPage> {
         return;
       }
 
-      // Ambil data nama_usaha dari tabel users berdasarkan auth_id
       final userData = await supabase
           .from('users')
           .select()
@@ -98,7 +96,7 @@ class _LoginPageState extends State<LoginPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.grey,
+      backgroundColor: Colors.white,
       body: SafeArea(
         child: SingleChildScrollView(
           child: Padding(
@@ -115,6 +113,7 @@ class _LoginPageState extends State<LoginPage> {
                       style: TextStyle(
                         fontSize: 28,
                         fontWeight: FontWeight.bold,
+                        color: Color(0xFF2F5249),
                       ),
                     ),
                   ),
@@ -173,8 +172,11 @@ class _LoginPageState extends State<LoginPage> {
                     child: TextButton(
                       onPressed: () {},
                       child: const Text(
-                        "Forgot Password",
-                        style: TextStyle(fontSize: 12),
+                        "Forgot Password", //* belum ada fiturnya, untuk projek sendiri
+                        style: TextStyle(
+                          fontSize: 12,
+                          color: Color(0xFF437057),
+                        ),
                       ),
                     ),
                   ),
@@ -184,7 +186,7 @@ class _LoginPageState extends State<LoginPage> {
                     height: 50,
                     child: ElevatedButton(
                       style: ElevatedButton.styleFrom(
-                        backgroundColor: Colors.grey,
+                        backgroundColor: Color(0xFF437057),
                         shape: RoundedRectangleBorder(
                           borderRadius: BorderRadius.circular(30),
                         ),
@@ -201,7 +203,10 @@ class _LoginPageState extends State<LoginPage> {
                             )
                           : const Text(
                               "Sign In",
-                              style: TextStyle(fontSize: 16),
+                              style: TextStyle(
+                                fontSize: 16,
+                                color: Colors.white,
+                              ),
                             ),
                     ),
                   ),
@@ -222,7 +227,10 @@ class _LoginPageState extends State<LoginPage> {
                           },
                           child: const Text(
                             "Sign Up",
-                            style: TextStyle(fontWeight: FontWeight.bold),
+                            style: TextStyle(
+                              fontWeight: FontWeight.bold,
+                              color: Color(0xFF437057),
+                            ),
                           ),
                         ),
                       ],

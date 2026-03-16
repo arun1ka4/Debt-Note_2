@@ -69,15 +69,15 @@ class _RegisterPageState extends State<RegisterPage> {
       );
     } on AuthException catch (e) {
       if (mounted) {
-        ScaffoldMessenger.of(context).showSnackBar(
-          SnackBar(content: Text("Gagal register: ${e.message}")),
-        );
+        ScaffoldMessenger.of(
+          context,
+        ).showSnackBar(SnackBar(content: Text("Gagal register: ${e.message}")));
       }
     } catch (e) {
       if (mounted) {
-        ScaffoldMessenger.of(context).showSnackBar(
-          SnackBar(content: Text("Terjadi kesalahan: $e")),
-        );
+        ScaffoldMessenger.of(
+          context,
+        ).showSnackBar(SnackBar(content: Text("Terjadi kesalahan: $e")));
       }
     } finally {
       if (mounted) setState(() => isLoading = false);
@@ -93,7 +93,7 @@ class _RegisterPageState extends State<RegisterPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.grey,
+      backgroundColor: Colors.white,
       body: SafeArea(
         child: SingleChildScrollView(
           child: Padding(
@@ -110,6 +110,7 @@ class _RegisterPageState extends State<RegisterPage> {
                       style: TextStyle(
                         fontSize: 28,
                         fontWeight: FontWeight.bold,
+                        color: Color(0xFF2F5249),
                       ),
                     ),
                   ),
@@ -142,8 +143,9 @@ class _RegisterPageState extends State<RegisterPage> {
                       if (value == null || value.isEmpty) {
                         return "Email wajib diisi";
                       }
-                      if (!RegExp(r'^[\w-.]+@([\w-]+\.)+[\w-]{2,4}$')
-                          .hasMatch(value)) {
+                      if (!RegExp(
+                        r'^[\w-.]+@([\w-]+\.)+[\w-]{2,4}$',
+                      ).hasMatch(value)) {
                         return "Format email tidak valid";
                       }
                       return null;
@@ -158,11 +160,13 @@ class _RegisterPageState extends State<RegisterPage> {
                       prefixIcon: const Icon(Icons.lock),
                       border: const UnderlineInputBorder(),
                       suffixIcon: IconButton(
-                        icon: Icon(obscurePassword
-                            ? Icons.visibility_off
-                            : Icons.visibility),
-                        onPressed: () => setState(
-                            () => obscurePassword = !obscurePassword),
+                        icon: Icon(
+                          obscurePassword
+                              ? Icons.visibility_off
+                              : Icons.visibility,
+                        ),
+                        onPressed: () =>
+                            setState(() => obscurePassword = !obscurePassword),
                       ),
                     ),
                     validator: (value) {
@@ -176,8 +180,10 @@ class _RegisterPageState extends State<RegisterPage> {
                     },
                   ),
                   const SizedBox(height: 25),
-                  const Text("Confirm Password",
-                      style: TextStyle(fontSize: 15)),
+                  const Text(
+                    "Confirm Password",
+                    style: TextStyle(fontSize: 15),
+                  ),
                   TextFormField(
                     controller: confirmPasswordController,
                     obscureText: obscureConfirmPassword,
@@ -185,11 +191,15 @@ class _RegisterPageState extends State<RegisterPage> {
                       prefixIcon: const Icon(Icons.lock_outline),
                       border: const UnderlineInputBorder(),
                       suffixIcon: IconButton(
-                        icon: Icon(obscureConfirmPassword
-                            ? Icons.visibility_off
-                            : Icons.visibility),
-                        onPressed: () => setState(() =>
-                            obscureConfirmPassword = !obscureConfirmPassword),
+                        icon: Icon(
+                          obscureConfirmPassword
+                              ? Icons.visibility_off
+                              : Icons.visibility,
+                        ),
+                        onPressed: () => setState(
+                          () =>
+                              obscureConfirmPassword = !obscureConfirmPassword,
+                        ),
                       ),
                     ),
                     validator: (value) {
@@ -208,7 +218,7 @@ class _RegisterPageState extends State<RegisterPage> {
                     height: 50,
                     child: ElevatedButton(
                       style: ElevatedButton.styleFrom(
-                        backgroundColor: Colors.grey.shade800,
+                        backgroundColor: Color(0xFF437057),
                         shape: RoundedRectangleBorder(
                           borderRadius: BorderRadius.circular(30),
                         ),
@@ -226,7 +236,9 @@ class _RegisterPageState extends State<RegisterPage> {
                           : const Text(
                               "Sign Up",
                               style: TextStyle(
-                                  fontSize: 16, color: Colors.white),
+                                fontSize: 16,
+                                color: Colors.white,
+                              ),
                             ),
                     ),
                   ),
@@ -240,7 +252,10 @@ class _RegisterPageState extends State<RegisterPage> {
                           onTap: () => Navigator.pop(context),
                           child: const Text(
                             "Sign In",
-                            style: TextStyle(fontWeight: FontWeight.bold),
+                            style: TextStyle(
+                              fontWeight: FontWeight.bold,
+                              color: Color(0xFF437057),
+                            ),
                           ),
                         ),
                       ],
