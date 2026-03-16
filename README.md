@@ -19,7 +19,16 @@ Debtnote adalah aplikasi sederhana yang ditujukan bagi pelaku UMKM dengan tujuan
 
 ---
 
-## Struktur Project
+## Teknologi yang Digunakan
+
+- **Flutter** — Framework UI
+- **Supabase** — Backend as a Service (database & autentikasi)
+- **flutter_dotenv** — Menyimpan konfigurasi sensitif di file `.env`
+- **intl** — Format tanggal dan mata uang
+
+---
+
+## 🗃️Struktur Project
 ```
 lib/
 ├── models/
@@ -33,6 +42,29 @@ lib/
 ```
 
 ---
+
+
+## 📂Struktur Database
+
+### Tabel `users`
+| Kolom | Tipe | Keterangan |
+|---|---|---|
+| id | int8 | Primary key |
+| auth_id | uuid | Relasi ke Supabase Auth |
+| nama_usaha | text | Nama usaha pengguna |
+
+### Tabel `debt`
+| Kolom | Tipe | Keterangan |
+|---|---|---|
+| id | int8 | Primary key |
+| user_id | int8 | Foreign key ke tabel users |
+| nama | text | Nama penghutang |
+| jumlah | int8 | Jumlah hutang |
+| tanggal_hutang | date | Tanggal hutang dibuat |
+| tanggal_jatuh_tempo | date | Tanggal jatuh tempo hutang |
+
+---
+
 ## ⚙️Fitur
 
 | Fitur | Deskripsi |
@@ -71,36 +103,6 @@ lib/
 
 ---
 
-## Struktur Database
-
-### Tabel `users`
-| Kolom | Tipe | Keterangan |
-|---|---|---|
-| id | int8 | Primary key |
-| auth_id | uuid | Relasi ke Supabase Auth |
-| nama_usaha | text | Nama usaha pengguna |
-
-### Tabel `debt`
-| Kolom | Tipe | Keterangan |
-|---|---|---|
-| id | int8 | Primary key |
-| user_id | int8 | Foreign key ke tabel users |
-| nama | text | Nama penghutang |
-| jumlah | int8 | Jumlah hutang |
-| tanggal_hutang | date | Tanggal hutang dibuat |
-| tanggal_jatuh_tempo | date | Tanggal jatuh tempo hutang |
-
----
-
 ## 🎨UI Aplikasi
 
----
 
-## Teknologi yang Digunakan
-
-- **Flutter** — Framework UI
-- **Supabase** — Backend as a Service (database & autentikasi)
-- **flutter_dotenv** — Menyimpan konfigurasi sensitif di file `.env`
-- **intl** — Format tanggal dan mata uang
-
----
