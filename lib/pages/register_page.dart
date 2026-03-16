@@ -58,7 +58,7 @@ class _RegisterPageState extends State<RegisterPage> {
       if (!mounted) return;
 
       ScaffoldMessenger.of(context).showSnackBar(
-        const SnackBar(content: Text("Register berhasil, silakan login")),
+        const SnackBar(content: Text("Registrasi berhasil dilakukan")),
       );
 
       Navigator.pushReplacement(
