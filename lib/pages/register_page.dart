@@ -35,7 +35,6 @@ class _RegisterPageState extends State<RegisterPage> {
   Future<void> register() async {
     setState(() => isLoading = true);
     try {
-      // Daftar ke Supabase Auth
       final response = await supabase.auth.signUp(
         email: emailController.text.trim(),
         password: passwordController.text.trim(),
@@ -51,7 +50,6 @@ class _RegisterPageState extends State<RegisterPage> {
         return;
       }
 
-      // Simpan data tambahan (nama_usaha) ke tabel users
       await supabase.from('users').insert({
         'auth_id': authUser.id,
         'nama_usaha': namaUsahaController.text.trim(),

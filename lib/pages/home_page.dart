@@ -62,7 +62,6 @@ class _HomePageState extends State<HomePage> {
     fetchData();
   }
 
-  // FIX: Tambahkan supabase.auth.signOut()
   Future<void> logout() async {
     await supabase.auth.signOut();
     if (mounted) {
@@ -102,7 +101,6 @@ class _HomePageState extends State<HomePage> {
           ? const Center(child: CircularProgressIndicator())
           : Column(
               children: [
-                // Summary card
                 Container(
                   color: const Color(0xFF2F5249),
                   padding: const EdgeInsets.fromLTRB(16, 0, 16, 20),
@@ -117,7 +115,6 @@ class _HomePageState extends State<HomePage> {
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       crossAxisAlignment: CrossAxisAlignment.end,
                       children: [
-                        // Kiri: nama usaha + total hutang
                         Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
@@ -177,7 +174,6 @@ class _HomePageState extends State<HomePage> {
                   ),
                 ),
 
-                // List
                 Expanded(
                   child: debtList.isEmpty
                       ? Center(

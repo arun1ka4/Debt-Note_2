@@ -91,7 +91,7 @@ class _FormPageState extends State<FormPage> {
 
     final debt = Debt(
       id: widget.debt?.id,
-      userId: widget.userId, // selalu pakai userId dari parameter
+      userId: widget.userId, 
       nama: namaController.text,
       jumlah: int.parse(jumlahController.text),
       tanggalHutang: selectedTanggalHutang!,
