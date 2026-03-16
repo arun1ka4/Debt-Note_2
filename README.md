@@ -4,14 +4,20 @@
 Nama: Nayla Lelyanggraheni Hutomo  
 Mata Kuliah: Pemrograman Berbasis Web 
 
+---
+
 ## ✨Table of Content
 - [Deskripsi](#Deskripsi)
 - [Fitur](#fitur)
 - [Widget yang digunakan](#Widget-yang-Digunakan)
 - [UI aplikasi](#UI-Aplikasi)
 
+---
+
 ## 📌Deskripsi
 Debtnote adalah aplikasi sederhana yang ditujukan bagi pelaku UMKM dengan tujuan mencatat hutang dari pelanggan.
+
+---
 
 ## ⚙️Fitur
 
