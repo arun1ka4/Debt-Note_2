@@ -19,6 +19,20 @@ Debtnote adalah aplikasi sederhana yang ditujukan bagi pelaku UMKM dengan tujuan
 
 ---
 
+## Struktur Project
+```
+lib/
+├── models/
+│   └── debt_model.dart
+├── pages/
+│   ├── login_page.dart
+│   ├── register_page.dart
+│   ├── home_page.dart
+│   └── form_page.dart
+└── main.dart
+```
+
+---
 ## ⚙️Fitur
 
 | Fitur | Deskripsi |
