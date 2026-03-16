@@ -2,9 +2,7 @@
 
 ## Dibuat Oleh
 Nama: Nayla Lelyanggraheni Hutomo  
-
-Mata Kuliah: Pemrograman Berbasis Web 
-
+Mata Kuliah: Pemrograman Berbasis Web  
 Mini Project: 2
 
 ---
