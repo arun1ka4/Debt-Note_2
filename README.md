@@ -26,15 +26,27 @@ Debtnote adalah aplikasi sederhana yang ditujukan bagi pelaku UMKM dengan tujuan
 
 ## 📱Widget yang Digunakan
 
-| Widget | Penggunaan |
-|---------|---------|
-| StatefulWidget | Menangani perubahan data (state) ketika menambah, mengedit, dan menghapus data.|
-| MaterialApp | Sebagai root aplikasi untuk mengatur tema dan navigasi.|
-| Scaffold | Sebagai struktur dasar halaman (AppBar dan Body). |
-| ListView | Menampilkan daftar data buku. |
-| TextField | Sebagai input data |
-| ElevatedButton | Sebagai tombol aksi (Simpan, Edit, Hapus). |
-| Navigator | Digunakan untuk berpindah antar halaman (Multi Page Navigation). |
+| Widget | Kegunaan |
+|---|---|
+| `Scaffold` | Struktur dasar halaman |
+| `AppBar` | Bar navigasi atas |
+| `ListView.builder` | Menampilkan daftar hutang secara dinamis |
+| `Card` | Tampilan item hutang |
+| `InkWell` | Efek ripple saat card ditekan |
+| `FloatingActionButton` | Tombol tambah hutang |
+| `TextFormField` | Input form (nama, jumlah, tanggal) |
+| `Form` | Wrapper validasi form |
+| `ElevatedButton` | Tombol simpan dan login/register |
+| `Container` | Layout dan styling summary card |
+| `Column` & `Row` | Susunan widget secara vertikal dan horizontal |
+| `SingleChildScrollView` | Scroll pada halaman form |
+| `CircularProgressIndicator` | Indikator loading |
+| `SnackBar` | Notifikasi pesan sukses/gagal |
+| `IconButton` | Tombol logout |
+| `TextButton.icon` | Tombol edit dan hapus |
+| `GestureDetector` | Navigasi ke halaman register/login |
+
+---
 
 
 ## 🎨UI Aplikasi
